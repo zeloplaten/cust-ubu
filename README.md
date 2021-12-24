@@ -1,12 +1,13 @@
 #### Customize ubuntu server installation
 
 #### download customizer script
-$ FILE=customize-ubu.sh \
-$ wget https://raw.githubusercontent.com/zeloplaten/cust-ubu/main/$FILE -O $FILE
+$ CFILE=customize-ubu.sh \
+$ wget https://raw.githubusercontent.com/zeloplaten/cust-ubu/main/$CFILE -O $CFILE
 
 #### edit script variables as desired
-$ nano $FILE
+$ nano $CFILE
 
-#### execute script as sudo
-$ chmod 744 $FILE \
-$ sudo ./$FILE
+#### execute script as root
+$ sudo su root \
+$ chmod 744 $CFILE \
+$ ./$CFILE
