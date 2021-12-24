@@ -8,5 +8,5 @@ cp -v $HOSTS $HOSTS.bak
 awk -i inplace \
   'tolower($2)=="'$HOSTNAME'"{sub($2,"'$CU_HOSTNAME9'",$2)}; \
   {print}' \
-  HOSTS
+  $HOSTS
 hostnamectl set-hostname $CU_HOSTNAME9
